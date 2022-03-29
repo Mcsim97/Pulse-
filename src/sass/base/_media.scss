@@ -29,11 +29,30 @@
                     }
                 }
                 .button {
-                    width: 135px;
+                    min-width: 135px;
                 }
-                .promo__icons {
-                    justify-content: space-evenly;
-                    width: 100%;
+                .promo {
+                    &__icons {
+                        justify-content: space-evenly;
+                        width: 100%;
+                    }
+                    &__subheader {
+                        margin-top: 0px;
+                    }
+                }
+                .title {
+                    &_left {
+                        text-align: center;
+                        font-size: 26px;
+                    }
+                }
+                .consultation {
+                    &__descr {
+                        text-align: center;
+                    }
+                    .feed-form {
+                        margin: 20px auto;
+                    }
                 }
             }
             
@@ -52,12 +71,14 @@
                         }
                     }
                 }
-                .promo__header {
-                    font-size: 33px;
-                }
-                .promo__subheader {
-                    margin-top: 0;
-                    font-size: 17px;
+                .promo {
+                    &__header {
+                        font-size: 26px;
+                    }
+                    &__subheader {
+                        margin-top: 0;
+                        font-size: 17px;
+                    }
                 }
                 .button__main {
                     width: max-content;
@@ -81,19 +102,29 @@
                         margin-top: 90px;
                     }
                 }
-                .promo__header {
-                    font-size: 15px;
-                }
-                .promo__subheader {
-                    font-size: 14px;
-                    text-align: center;
-                }
-                .promo__icons {
-                    width: 100%;
+                .promo {
+                    &__header {
+                        font-size: 15px;
+                    }
+                    &__subheader {
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                    &_icons {
+                        width: 100%;
+                    }
                 }
                 .benefits {
                     &__text {
                         width: 70%;
+                    }
+                }
+                .title_left {
+                    font-size: 20px;
+                }
+                .consultation {
+                    &__descr {
+                        font-size: 14px;
                     }
                 }
             }
