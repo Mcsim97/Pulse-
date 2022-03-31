@@ -1,7 +1,7 @@
 .carousel {
     padding: 81px 0;
     &__inner {
-        width: 750px;
+        max-width: 750px;
         margin: 0 auto;
         position: relative;
     }
@@ -20,5 +20,33 @@
     .slick-next {
         left: auto;
         right: -66px;
+    }
+    .slick-dots {
+        text-align: center;
+        display: flex; // поставить кнопки в ряд
+        justify-content: center; // выровнять по центру
+        list-style: none; // убираем черные маркеры
+    }
+    .slick-dots button {
+        font-size: 0;
+        background: #928e8e77; // цвет фона
+        height: 15px; // высота точки
+        width: 15px; // ширина точки
+        margin: 5px; // отступы между точками
+    }
+    .slick-dots li:nth-child(1) button {
+        width: 8px;
+        height: 8px;
+    }
+    .slick-dots li:nth-child(2) button {
+        width: 8px;
+        height: 8px;
+    }
+    .slick-dots li:nth-child(3) button {
+        width: 8px;
+        height: 8px;
+    }
+    .slick-dots li[class="slick-active"] button {
+        background: #fffffe;
     }
 }
