@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('.carousel__inner').slick({
-        speed: 900,
+        speed: 350,
         /* adaptiveHeight: true, */
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
@@ -9,7 +9,8 @@ $(document).ready(function() {
                 settings: {
                     slidesToShow: 1,
                     dots: true,
-                    arrows: false
+                    arrows: false,
+                    waitForAnimate: false
                 }
             },
             {
@@ -19,6 +20,8 @@ $(document).ready(function() {
                     slidesToScroll: 1,
                     arrows: false,
                     dots: true,
+                    waitForAnimate: false
+
 
                 }
             },
@@ -29,6 +32,8 @@ $(document).ready(function() {
                     slidesToScroll: 1,
                     arrows: false,
                     dots: true,
+                    waitForAnimate: false
+
 
                 }
             }
